@@ -10,14 +10,20 @@ body {
   background: #0f2027;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #2c5364, #203a43, #0f2027);
-
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  display: grid;
   margin: 50vh 0;
-  justify-content: center;
+  width: 100%;
+ 
 }
+
+.container{
+    width: 100%;
+    padding:  0 30%;
+}
+
+
 
 body div input{
     background-color: transparent;
@@ -48,16 +54,21 @@ body button{
 
 
 @media screen and (max-width: 786px) {
-    body{
-        width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
+    
     body div input {
         height: 50px;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 16px;
     }
+
+    .container{
+        width: 100%;
+        padding:  0 20%;
+    }
+
+    .container div h2 {
+         font-size: 18px;
+    }
+    
 
 }

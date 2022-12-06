@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>matric number checker</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>matric number checker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
         <div>
-            <input type="text" id="matric-input">
+            <input type="text" id="matric-input" placeholder="ADD MATRIC NUMBER" required>
 
             <h2>student Name: <span id="student-name" style="color: cyan;"></span></h2>
         </div>
-     
 
+        <p><span id="record"></span></p>
         <button type="button" id="button"> check</button>
-        <script src="script.js" async defer></script>
-    </body>
+
+        <p style="color: red; font-weight: 300;
+        margin-top: 30px;">Note: Matric number should be in uppercase</p>
+    </div>
+
+    <script src="script.js" async defer></script>
+</body>
+
 </html>
