@@ -559,7 +559,7 @@ const schoolArray = [
 
 
     {
-        name: "OLURUNDARE MUKHTAR BUKOLA",
+        name: "MUKKY LORD",
         matricnumber: "21D/67CE/00712",
     },
 
