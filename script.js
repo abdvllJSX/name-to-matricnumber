@@ -1,7 +1,8 @@
 const matricInput = document.getElementById("matric-input");
 const studentNameDisplay = document.getElementById("student-name");
 const button = document.getElementById('button')
-const recordDisplay = document.getElementById('record')
+let recordDisplay = document.getElementById('record')
+
 
 const schoolArray = [
     {
@@ -730,21 +731,23 @@ const schoolArray = [
 ];
 
 function matricNumberChecker() {
+    
     for (let i = 0; i < schoolArray.length; i++) {
-        if (matricInput.value === schoolArray[i].matricnumber) {
+        if (matricInput.value === schoolArray[i].matricnumber ) {
+            console.log("here")
             studentNameDisplay.innerHTML = schoolArray[i].name
-            let record = 'record Found'
-            recordDisplay.innerHTML = record
+            recordDisplay.innerHTML = 'record found'
+            return
+        }else{
+            studentNameDisplay.innerHTML = null
+            recordDisplay.innerHTML = 'record not found'
+            
         }
-
     }
-
-
+    
 }
 
 
-setInterval
+
 
 button.addEventListener('click', matricNumberChecker)
-
-console.log(schoolArray.length)
